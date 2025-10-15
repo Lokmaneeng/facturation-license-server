@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: facturation-license-server
+    env: python
+    region: frankfurt
+    buildCommand: ""
+    startCommand: gunicorn server:app
